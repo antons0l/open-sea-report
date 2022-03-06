@@ -79,7 +79,6 @@ export class OpenSeaClient {
       }
       const arr: OpenSeaEvent[] = [];
       axiosResponse.data.asset_events.forEach((ev: any) => {
-        if (ev.asset.token_id === '6311') console.log(ev) //delete me
         arr.push({
           token_id: ev.asset.token_id,
           permalink: ev.asset.permalink,

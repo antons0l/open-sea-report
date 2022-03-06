@@ -9,11 +9,12 @@ In the project folder, type:
 ```
 npm install
 ```
+Create an environment file (.env) and set the variables.
 
 ## Run
 
 In the project folder, type:
 ```
-node index.js
+npm run start
 ```
 
