@@ -22,7 +22,7 @@ export interface OpenSeaEvent {
 
 export class OpenSeaClient {
   private apiUrl = "https://api.opensea.io/api/v1/events";
-  private params = "only_opensea=true";
+  private params = "event_type=created&only_opensea=true";
   private config = {
     headers: {
       Accept: "application/json",

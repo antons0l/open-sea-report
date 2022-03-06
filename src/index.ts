@@ -8,7 +8,8 @@ async function main() {
   const csvWriter = new CsvWriter();
   const boredApeYachtClubAddress = "0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D";
 
-  const startDate = dayjs().subtract(28, 'days').toDate();
+  const days_range = Number.parseInt(process.env.DAYS_RANGE || "0");
+  const startDate = dayjs().subtract(days_range, 'days').toDate();
 
   console.log(getTimestamp() + ": Preparing report...");
   const events: OpenSeaEvent[] = await openSeaClient.getEvents(boredApeYachtClubAddress, startDate);

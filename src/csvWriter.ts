@@ -8,7 +8,7 @@ export class CsvWriter {
       header: [
         { id: "starting_price", title: "listing price" },
         { id: "token_id", title: "tokenId" },
-        { id: "created_date", title: "listing date" },
+        { id: "listing_time", title: "listing date" },
       ],
     });
 
