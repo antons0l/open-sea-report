@@ -1,0 +1,22 @@
+{
+  "name": "openseareport",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build && node build/index.js",
+    "build": "tsc"
+  },
+  "author": "antons0l",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "csv-writer": "^1.6.0",
+    "dayjs": "^1.10.8",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21"
+  }
+}
