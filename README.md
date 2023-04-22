@@ -5,6 +5,11 @@ for specific collection (Bored Ape Yacht Club).
 
 ## Installation
 
+Install typescript (if it wasn't installed on your machine):
+```
+npm install -g typescript
+```
+
 In the project folder, type:
 ```
 npm install
